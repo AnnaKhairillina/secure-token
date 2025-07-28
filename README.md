@@ -7,14 +7,13 @@
 - не может быть прочитан без ключа (конфиденциальность),
 - не может быть изменён без обнаружения (целостность),
 
-***POST /api/token/encrypt***
-***Шифрует и подписывает токен***
-**Пример запроса:**
-'''bash
+POST /api/token/encrypt
+Шифрует и подписывает токен
+Пример запроса:
 curl -X POST http://localhost:8081/api/token/encrypt \
   -H "Content-Type: application/json" \
   -d '"MY_SECRET_TOKEN_123"'
-***Пример ответа:***
+Пример ответа:
 {
   "ciphertext": "kpCSPB/KPBl+txmjYHbKKlI0oSutwMGVI+I24wGcIhI=",
   "hmac": "aR8HStsfR1Eo3IdjyPCuwkG3CQ1C3Xn2sjteNthrzBc=",
